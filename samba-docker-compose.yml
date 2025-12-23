@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  samba:
+    image: dperson/samba
+    container_name: samba
+    ports:
+      - "139:139"
+      - "445:445"
+    volumes:
+      - ./shared:/shared
+    environment:
+      - USERID=1000
+      - GROUPID=1000
+    command: >
+      -u "pi;StrongPass123"
+      -s "Shared;/shared;yes;no;no;pi"
+    restart: unless-stopped

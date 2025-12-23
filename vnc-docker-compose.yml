@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  vnc-desktop:
+    image: consol/ubuntu-xfce-vnc:latest
+    container_name: rpi-vnc-desktop
+    restart: unless-stopped
+    ports:
+      - "6901:6901"  # Web access via noVNC
+      - "5901:5901"  # Standard VNC port (optional)
+    environment:
+      - VNC_RESOLUTION=1280x720
+      - VNC_PW=your_password_here  # Change this!
+      - VNC_BLACKLIST_THRESHOLD=50
+      - VNC_BLACKLIST_TIMEOUT=0
+      - VNC_VIEW_ONLY=false
+    volumes:
+      - ./home:/headless
+      - ./config:/config
+    devices:
+      - /dev/vchiq:/dev/vchiq  # For hardware acceleration
+      - /dev/fb0:/dev/fb0      # For framebuffer access
+    privileged: true
+    network_mode: "host"  # For better performance on Pi
+    cap_add:
+      - SYS_ADMIN
+      - SYS_PTRACE
+    shm_size: '2gb'  # Increased shared memory for X11

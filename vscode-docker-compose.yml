@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  vscode:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: vscode
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+      - PASSWORD=changeme123   # login password
+    volumes:
+      - ./config:/config
+      - ./workspace:/workspace
+    ports:
+      - 8443:8443
+    restart: unless-stopped

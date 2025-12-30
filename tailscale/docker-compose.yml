@@ -1,0 +1,15 @@
+services:
+  tailscale:
+    image: tailscale/tailscale:latest
+    container_name: tailscale
+    hostname: psy-wg
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    volumes:
+      - ./tailscale:/var/lib/tailscale
+      - ./tailscale-start.sh:/tailscale-start.sh
+      - /dev/net/tun:/dev/net/tun
+    command: ["/tailscale-start.sh"]
+    restart: unless-stopped

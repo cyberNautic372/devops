@@ -1,0 +1,9 @@
+services:
+  onlyoffice:
+    image: onlyoffice/documentserver
+    container_name: onlyoffice
+    ports:
+      - "5656:80"
+    restart: always        # यही auto on/off handle करेगा
+    environment:
+      - TZ=Asia/Kolkata

@@ -1,0 +1,36 @@
+{"logtail":{"client_time":"2025-12-30T09:37:11.065087564Z","proc_id":576005010,"proc_seq":799},"v":2,"text":"wg: [mQt2+] - Handshake did not complete after 5 seconds, retrying (try 3)\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.065208419Z","proc_id":576005010,"proc_seq":800},"v":2,"text":"wg: [mQt2+] - Sending handshake initiation\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177642341Z","proc_id":576005010,"proc_seq":801},"text":"tailscaled got signal terminated; shutting down\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177776181Z","proc_id":576005010,"proc_seq":802},"text":"canceling captive portal context\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177824905Z","proc_id":576005010,"proc_seq":803},"text":"control: client.Shutdown ...\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177843577Z","proc_id":576005010,"proc_seq":804},"v":1,"text":"control: authRoutine: context done.\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.17785068Z","proc_id":576005010,"proc_seq":805},"text":"control: authRoutine: exiting\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177858771Z","proc_id":576005010,"proc_seq":806},"text":"control: updateRoutine: exiting\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177920953Z","proc_id":576005010,"proc_seq":807},"v":1,"text":"control: PollNetMap: context canceled\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177933215Z","proc_id":576005010,"proc_seq":808},"text":"control: mapRoutine: exiting\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177985706Z","proc_id":576005010,"proc_seq":809},"text":"control: Client.Shutdown done.\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.177999956Z","proc_id":576005010,"proc_seq":810},"text":"ipnext: work queue shutdown failed: execqueue shut down\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178090394Z","proc_id":576005010,"proc_seq":811},"text":"magicsock: closing connection to derp-6 (conn-close), age 16m39s\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178104726Z","proc_id":576005010,"proc_seq":812},"text":"magicsock: closing connection to derp-19 (conn-close), age 9m46s\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178118002Z","proc_id":576005010,"proc_seq":813},"text":"magicsock: 0 active derp conns\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178312648Z","proc_id":576005010,"proc_seq":814},"v":2,"text":"wg: Routine: receive incoming mkReceiveFunc - stopped\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178344583Z","proc_id":576005010,"proc_seq":815},"v":2,"text":"wg: Routine: receive incoming mkReceiveFunc - stopped\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.178444161Z","proc_id":576005010,"proc_seq":816},"text":"dns: inotify: context canceled\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180740082Z","proc_id":576005010,"proc_seq":817},"v":1,"text":"monitor: RTM_DELROUTE: src=, dst=fd7a:115c:a1e0::/48, gw=, outif=55, table=52\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.18078251Z","proc_id":576005010,"proc_seq":818},"v":1,"text":"monitor: RTM_DELROUTE: src=, dst=fd7a:115c:a1e0::c901:768f/128, gw=, outif=55, table=254\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180817839Z","proc_id":576005010,"proc_seq":819},"text":"monitor: RTM_DELROUTE: src=, dst=fe80::/64, gw=, outif=55, table=254\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180848636Z","proc_id":576005010,"proc_seq":820},"v":1,"text":"monitor: RTM_DELROUTE: src=, dst=fd7a:115c:a1e0::c901:768f/128, gw=, outif=55, table=255\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180883565Z","proc_id":576005010,"proc_seq":821},"text":"monitor: RTM_DELROUTE: src=, dst=fe80::/128, gw=, outif=55, table=255\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180912168Z","proc_id":576005010,"proc_seq":822},"text":"monitor: RTM_DELROUTE: src=, dst=fe80::676a:b880:1501:c1cb/128, gw=, outif=55, table=255\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.180938727Z","proc_id":576005010,"proc_seq":823},"text":"monitor: RTM_DELROUTE: src=, dst=ff00::/8, gw=, outif=55, table=255\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.181547221Z","proc_id":576005010,"proc_seq":824},"text":"monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:254 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5210 Table:254 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.181616166Z","proc_id":576005010,"proc_seq":825},"text":"monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:253 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5230 Table:253 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.18166965Z","proc_id":576005010,"proc_seq":826},"text":"monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:0 Protocol:0 Scope:0 Type:7 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5250 Table:0 Mark:16711680 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.181700085Z","proc_id":576005010,"proc_seq":827},"text":"monitor: ip rule deleted: {Family:2 DstLength:0 SrcLength:0 Tos:0 Table:52 Protocol:0 Scope:0 Type:1 Flags:0 Attributes:{Dst:<nil> Src:<nil> Gateway:<nil> OutIface:0 Priority:5270 Table:52 Mark:0 Pref:<nil> Expires:<nil> Metrics:<nil> Multipath:[]}}\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.196538272Z","proc_id":576005010,"proc_seq":828},"v":2,"text":"wg: Device closing\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.19706496Z","proc_id":576005010,"proc_seq":829},"v":1,"text":"monitor: RTM_DELROUTE: src=100.125.118.95/0, dst=100.125.118.95/32, gw=, outif=55, table=255\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.249604886Z","proc_id":576005010,"proc_seq":830},"v":2,"text":"wg: Routine: receive incoming receiveDERP - stopped\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.24963781Z","proc_id":576005010,"proc_seq":831},"v":2,"text":"wg: [mQt2+] - Stopping\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.249667569Z","proc_id":576005010,"proc_seq":832},"v":2,"text":"wg: Device closed\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.249701017Z","proc_id":576005010,"proc_seq":833},"text":"flushing log.\n"}
+{"logtail":{"client_time":"2025-12-30T09:37:11.249725083Z","proc_id":576005010,"proc_seq":834},"text":"logger closing down\n"}

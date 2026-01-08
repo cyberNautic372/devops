@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  ubooquity:
+    image: linuxserver/ubooquity:latest
+    container_name: ubooquity
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Kolkata
+    volumes:
+      - /mnt/external_storage/Books/Novels:/books
+      - ./ubooquity-config:/config
+    ports:
+      - "2202:2202"
+      - "2203:2203"
+    restart: unless-stopped

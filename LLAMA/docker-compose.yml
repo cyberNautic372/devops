@@ -3,7 +3,7 @@ services:
     image: ollama/ollama:latest
     container_name: ollama
     volumes:
-      - ./ollama:/root/.ollama
+      - /mnt/external_storage/ollama:/root/.ollama
     ports:
       - "11434:11434"
     restart: unless-stopped

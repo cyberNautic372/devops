@@ -5,7 +5,7 @@ services:
       - "4533:4533"
     volumes:
       - ./data:/data
-      - ./music:/music
+      - /mnt/external_storage/Music:/music
     restart: unless-stopped
 
   feishin:

@@ -1,12 +1,8 @@
-version: '3.8'
-
 services:
   samba:
     image: dperson/samba
     container_name: samba-server
     restart: unless-stopped
-    networks:
-      - samba-network
     ports:
       - "445:445/tcp"
       - "139:139/tcp"
@@ -20,26 +16,14 @@ services:
       - ./samba/config:/etc/samba/external
       - ./samba/shares:/shares
       - ./samba/logs:/var/log/samba
+      - /mnt/external_storage:/shares/external
       - /etc/localtime:/etc/localtime:ro
     command: >
       -p
-      -u "user1;password123"
+      -u "psy;password123"
       -u "user2;password456"
-      -s "public;/shares/public;yes;no;no;all;user1,user2"
-      -s "private;/shares/private;yes;no;no;user1;user1"
-      -s "readonly;/shares/readonly;yes;no;no;user1;user1,user2"
+      -s "public;/shares/public;yes;no;no;all;psy,user2"
+      -s "private;/shares/private;yes;no;no;psy;psy"
+      -s "readonly;/shares/readonly;yes;no;no;psy;psy,user2"
+      -s "external;/shares/external;yes;no;no;psy;psy"
       -S
-      -g "workgroup = WORKGROUP"
-      -g "server string = Samba Server"
-      -g "netbios name = SAMBA-SERVER"
-      -g "security = user"
-      -g "guest account = nobody"
-      -g "map to guest = bad user"
-      -g "log file = /var/log/samba/log.%m"
-      -g "max log size = 50"
-    stdin_open: true
-    tty: true
-
-networks:
-  samba-network:
-    driver: bridge

@@ -10,7 +10,7 @@ services:
       - WEBUI_PORT=4534
     volumes:
       - ./config:/config
-      - /mnt/external_storage:/downloads
+      - /mnt/external_storage/Torrents:/downloads
     ports:
       - 4534:4534
       - 6881:6881
